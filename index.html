@@ -13,33 +13,53 @@
         }
         .center-content{
             display: flex;
+            flex-direction: column;
             height: 100%;
             align-items: center;
             justify-content: center;
         }
         .intro{
             display: flex;
+            flex: 1;
             border: 5px solid white ;
             height: 80%;
             width:90%;
             align-items: center;
             justify-content: center;
-            background-position:center;
+            background-position: center;
             background-color: #cccccc;
             background-repeat: no-repeat;
+            /* background-attachment: fixed */
+            /* background-size: 50% 100%; */
             background-size: cover;
-            background-image: url("/images/intro_pic.jpg")
+            background-image: url("/images/intro_pic.jpg");
         }
         .intro .intro-word{
            font-size: 5vh;
+           position: absolute;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            color: gray;
+            /* flex:1; */
+        }
+        .copyright{
+            text-align: center;
         }
     </style>
 </head>
 <body style="font-family: 'Lexend Exa', sans-serif;background-color: #f3f3f3;">
     <div class="center-content">
             <div class="intro">
-                    <p class="intro-word" style="color: white;">"BOSS-OFFICE"</p>
+                    <p class="intro-word" style="color: white;">" BOSS-OFFICE "</p>
             </div>
+            <!-- <div class="content">
+                this site under construction
+            </div> -->
+            
     </div>
+    <p class="copyright" style="color: black;">Copyright &copy; 2019 Boss-Office</p>
 </body>
 </html>
